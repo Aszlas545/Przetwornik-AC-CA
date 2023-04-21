@@ -14,10 +14,10 @@ namespace GUI
             player.Play();
         }
 
-        public void StartRecording(int sampling, string path)
+        public void StartRecording(int sampling, int quantization, string path)
         {
             waveSource = new WaveIn();
-            waveSource.WaveFormat = new WaveFormat(sampling, 1);
+            waveSource.WaveFormat = new WaveFormat(sampling, quantization, 2);
 
             waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
             waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);

@@ -18,17 +18,24 @@ namespace GUI
         {
             if (RecordButton.Text == "Nagraj")
             {
-                try
+                if (QuantizationSet.Text != String.Empty && SamplingSet.Text != String.Empty)
                 {
-                    CommsSet.Text = "Rozpoczêto nagrywania, naciœnij ponownie przycisk aby je zakoñczyæ";
-                    soundManager.StartRecording(Convert.ToInt32(SamplingSet.Text), FileName.Text);
-                    RecordButton.Text = "Stop";
-                    pathToSound = FileName.Text;
-                    PlayButton.Enabled = true;
+                    try
+                    {
+                        CommsSet.Text = "Rozpoczêto nagrywania, naciœnij ponownie przycisk aby je zakoñczyæ";
+                        soundManager.StartRecording(Convert.ToInt32(SamplingSet.Text), Convert.ToInt32(QuantizationSet.Text), FileName.Text);
+                        RecordButton.Text = "Stop";
+                        pathToSound = FileName.Text;
+                        PlayButton.Enabled = true;
+                    }
+                    catch
+                    {
+                        CommsSet.Text = "Nie wybrano nazwy pliku lub jest ona niepoprwana";
+                    }
                 }
-                catch
+                else
                 {
-                    CommsSet.Text = "Nie wybrano nazwy pliku lub jest ona niepoprwana";
+                    CommsSet.Text = "Nie ustawiono czêstotliwoœci próbkowania i kwantyzacji lub s¹ one niepoprawne";
                 }
             }
             else
@@ -74,7 +81,7 @@ namespace GUI
             CommsSet.Text = String.Empty;
             try
             {
-                SNRSet.Text = Convert.ToString(20 * Math.Log(Convert.ToDouble(SamplingSet.Text) / Math.Pow(2, Convert.ToDouble(QuantizationSet.Text))));
+                SNRSet.Text = Convert.ToString(20 * Math.Log(Math.Pow(2, Convert.ToDouble(QuantizationSet.Text))));
                 CommsSet.Text = "Obliczono SNR";
             }
             catch
@@ -88,7 +95,7 @@ namespace GUI
             CommsSet.Text = String.Empty;
             try
             {
-                SNRSet.Text = Convert.ToString(20 * Math.Log(Convert.ToDouble(SamplingSet.Text) / Math.Pow(2, Convert.ToDouble(QuantizationSet.Text))));
+                SNRSet.Text = Convert.ToString(20 * Math.Log(Math.Pow(2, Convert.ToDouble(QuantizationSet.Text))));
                 CommsSet.Text = "Obliczono SNR";
             }
             catch

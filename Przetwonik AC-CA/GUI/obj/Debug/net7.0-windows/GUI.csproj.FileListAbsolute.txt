@@ -3,6 +3,16 @@ D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\GUI.deps.js
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\GUI.runtimeconfig.json
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\GUI.dll
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\GUI.pdb
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\System.Private.ServiceModel.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\System.ServiceModel.Http.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\System.ServiceModel.NetTcp.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\System.ServiceModel.Primitives.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\System.ServiceModel.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\System.ServiceModel.Security.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\VisioForge.Core.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\VisioForge.Libs.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\VisioForge.MediaFramework.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\bin\Debug\net7.0-windows\VisioForge.Types.dll
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.csproj.AssemblyReference.cache
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.Form1.resources
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.csproj.GenerateResource.cache
@@ -10,6 +20,7 @@ D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.Generat
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfoInputs.cache
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.AssemblyInfo.cs
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.csproj.CopyComplete
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.dll
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\refint\GUI.dll
 D:\Telekomunkacja\Zad4\Przetwonik AC-CA\GUI\obj\Debug\net7.0-windows\GUI.pdb

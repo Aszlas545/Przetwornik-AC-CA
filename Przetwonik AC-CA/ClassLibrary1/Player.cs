@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,5 +9,12 @@ namespace Logic
 {
     internal class Player
     {
+        public void playSound(string sound) 
+        {
+            using (var soundPlayer = new SoundPlayer(sound))
+            {
+                soundPlayer.Play();
+            }
+        }
     }
 }

@@ -1,0 +1,12 @@
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\bin\Debug\net7.0\Logic.deps.json
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\bin\Debug\net7.0\Logic.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\bin\Debug\net7.0\Logic.pdb
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.csproj.AssemblyReference.cache
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.AssemblyInfoInputs.cache
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.AssemblyInfo.cs
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.csproj.CoreCompileInputs.cache
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\refint\Logic.dll
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\Logic.pdb
+D:\Telekomunkacja\Zad4\Przetwonik AC-CA\ClassLibrary1\obj\Debug\net7.0\ref\Logic.dll

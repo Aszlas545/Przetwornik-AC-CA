@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BWaoubNEJ5JonYFi4m0hEkzRiyTTuQ2IMARq9eCTOZwkOp1q4fCcNh6YFu910FWkvDv4xWuoGBG7wZiuwBoNLQ==",
+  "dgSpecHash": "T4vIu1r+Axz0A6z3GgFtl/Ke7xV/zz+CmgKYDnn6pVlr+HifOtmIZWLRvWK2n6ig4OUbh1aZs/iomXGNgHe4bg==",
   "success": true,
   "projectFilePath": "D:\\Telekomunkacja\\Zad4\\Przetwonik AC-CA\\ClassLibrary1\\Logic.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\szlas\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\szlas\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\szlas\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

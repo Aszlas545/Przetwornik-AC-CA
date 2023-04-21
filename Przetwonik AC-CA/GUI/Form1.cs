@@ -5,6 +5,7 @@ namespace GUI
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Zadanie 4, Pawe³ Stus, Andrzej Szlaski";
         }
     }
 }

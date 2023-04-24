@@ -5,39 +5,39 @@ namespace GUI
 {
     internal class SoundManager
     {
-        public WaveIn waveSource = null;
-        public WaveFileWriter waveFile = null;
+        public WaveIn waveSource = null;                            //Klasa reprezentująca urządzenie nagrywające
+        public WaveFileWriter waveFile = null;                      //Klasa zapisuąca do pliku
 
         public void PlaySound(string path)
         {
-            SoundPlayer player = new SoundPlayer(path);
-            player.Play();
+            SoundPlayer player = new SoundPlayer(path);             //Klasa odtwarzącja dzwięk z bilioteki System.Media
+            player.Play();                                          //Odtworzenie dzięku
         }
 
         public void StartRecording(int sampling, int quantization, string path)
         {
-            waveSource = new WaveIn();
-            waveSource.WaveFormat = new WaveFormat(sampling, quantization, 2);
+            waveSource = new WaveIn();                                                                      //Stworzenia urządzenia brakującego bazowo brane to z systemu o indeskie 0 (domyślne)
+            waveSource.WaveFormat = new WaveFormat(sampling, quantization, 2);                              //Stworzenia formatu wav o określonych parametrach kwantyzacji i próbkowania
 
-            waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);
-            waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped);
+            waveSource.DataAvailable += new EventHandler<WaveInEventArgs>(waveSource_DataAvailable);        //Event dopisujący dane gdy coś mówimy
+            waveSource.RecordingStopped += new EventHandler<StoppedEventArgs>(waveSource_RecordingStopped); //Event disposujący klasy po zakończeniu nagrywania
 
-            waveFile = new WaveFileWriter(@path, waveSource.WaveFormat);
+            waveFile = new WaveFileWriter(@path, waveSource.WaveFormat);                                    //Utworzenia pliku w zadanej ścieżce i zapisywanie tam formatu utworzenego wcześniej
 
             waveSource.StartRecording();
         }
 
-        public void StopRecording() 
+        public void StopRecording()                                                                         //Zakończenie nagrywania po którym wykona się waveSource_RecordingStopped
         {
             waveSource.StopRecording();
         }
 
-        void waveSource_DataAvailable(object sender, WaveInEventArgs e)
+        void waveSource_DataAvailable(object sender, WaveInEventArgs e)                                     //Funckja dopsisująca dane do pliku i czyszcząca bufor aby się nie przepełnił
         {
             if (waveFile != null)
             {
-                waveFile.Write(e.Buffer, 0, e.BytesRecorded);
-                waveFile.Flush();
+                waveFile.Write(e.Buffer, 0, e.BytesRecorded);                                               //dopisywanie 
+                waveFile.Flush();                                                                           //czyszczenie buffora
             }
         }
 
@@ -45,13 +45,13 @@ namespace GUI
         {
             if (waveSource != null)
             {
-                waveSource.Dispose();
+                waveSource.Dispose();                                                                       //Pozbycie się źródła nagrywania
                 waveSource = null;
             }
 
             if (waveFile != null)
             {
-                waveFile.Dispose();
+                waveFile.Dispose();                                                                         //Pozbycie się klasy zapisującej do pliku
                 waveFile = null;
             }
         }

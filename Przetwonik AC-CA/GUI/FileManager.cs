@@ -8,14 +8,14 @@ namespace GUI
 {
     internal class FileManager
     {
+        //Funckja realizująca dialog z użytkowniek aby znaleźć plik wav
         public string GetSoundPath()
         {
-            OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Wav Files (*.wav)|*.wav";
+            OpenFileDialog dialog = new OpenFileDialog();       //utworzenia dialogu
+            dialog.Filter = "Wav Files (*.wav)|*.wav";          //filtr na pliki wav
             dialog.FilterIndex = 1;
-            dialog.Multiselect = true;
 
-         if (dialog.ShowDialog() == DialogResult.OK)                 
+         if (dialog.ShowDialog() == DialogResult.OK)            //jeżeli dialog zakończył się prawidłowo zwraca string ze ścieżką w przeciwnym razie pusty string   
              return dialog.FileName;            
          else
              return string.Empty; 
